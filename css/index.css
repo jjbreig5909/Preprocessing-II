@@ -168,11 +168,16 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.header {
+  border-bottom: 2px dashed silver;
+}
 .header .navigation {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 30px;
+  margin: 20px auto 30px auto;
+  max-width: 800px;
+  width: 100%;
 }
 .header .navigation nav {
   display: flex;
@@ -186,7 +191,8 @@ img {
 }
 .header img {
   width: 100%;
-  border-top: 2px dashed silver;
+  max-width: 800px;
+  margin: 0px auto 0px auto;
 }
 .footer {
   width: 100%;
