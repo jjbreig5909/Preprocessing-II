@@ -3,7 +3,7 @@
     display: flex;
     justify-content: @justify;
     align-content: @align;
-    background-color: #008080;
+    background-color: @button-bg;
     color: white;
     font-size: 2rem;
     padding: 12px;
@@ -12,4 +12,12 @@
      @media @mobile{
       width: 100%;
     }
+}
+
+.hover-animation-darken(@amount){
+  &:hover {
+    background-color: darken(@button-bg, @amount);
+    transition: .3s;
+    cursor: pointer;
+  }
 }
